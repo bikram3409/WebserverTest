@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">47.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">example.NewTest</td><td><a href="#m1"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1512389394927</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">example.NewTest</td><td><a href="#m2"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1512389441950</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">example.NewTest</td><td><a href="#m3"><b>f</b>  </a></td><td class="numi">1</td><td>1512389441943</td><td class="numi">3</td></tr>
+</table>
+<h1>Test</h1>
+<h2 id="m1">example.NewTest:beforeTest</h2>
+<div style="padding-left:3em">
+<p>Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404299	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404300	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404301	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404302	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404303	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404304	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404304	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404305	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404306	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404308	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404309	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404310	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404311	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404312	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404313	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404315	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404316	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404317	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404322	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404329	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404366	DeferredSave.webext.sc.lz4	DEBUG	Save changes
+1512389404370	DeferredSave.extensions.json	DEBUG	Write succeeded
+Extension error: Data is not ready. resource://gre/modules/JSONFile.jsm:159 :: get data@resource://gre/modules/JSONFile.jsm:159:13
+_get@resource://gre/modules/ExtensionPermissions.jsm:65:9
+observe@resource://gre/modules/AsyncShutdown.jsm:534:9
+
+console.error: 
+  Message: Error: Data is not ready.
+  Stack:
+    get data@resource://gre/modules/JSONFile.jsm:159:13
+_get@resource://gre/modules/ExtensionPermissions.jsm:65:9
+observe@resource://gre/modules/AsyncShutdown.jsm:534:9
+
+1512389404404	DeferredSave.addons.json	DEBUG	Write succeeded
+1512389404412	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1512389404412	DeferredSave.webext.sc.lz4	DEBUG	Starting timer
+1512389409416	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1512389409423	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{&quot;name&quot;:&quot;EnvironmentAddonBuilder&quot;,&quot;state&quot;:&quot;(none)&quot;,&quot;filename&quot;:&quot;resource://gre/modules/TelemetryEnvironment.jsm&quot;,&quot;lineNumber&quot;:502,&quot;stack&quot;:[&quot;resource://gre/modules/TelemetryEnvironment.jsm:init:502&quot;,&quot;resource://gre/modules/TelemetryEnvironment.jsm:EnvironmentCache:864&quot;,&quot;resource://gre/modules/TelemetryEnvironment.jsm:getGlobal:63&quot;,&quot;resource://gre/modules/TelemetryEnvironment.jsm:get currentEnvironment:70&quot;,&quot;jar:file:///usr/lib/firefox/omni.ja!/components/TelemetryStartup.js:annotateEnvironment:42&quot;,&quot;jar:file:///usr/lib/firefox/omni.ja!/components/TelemetryStartup.js:TelemetryStartup.prototype.observe:32&quot;]}] Barrier: AddonManager: Waiting for providers to shut down.
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{&quot;name&quot;:&quot;AddonManager: shutting down.&quot;,&quot;state&quot;:[{&quot;name&quot;:&quot;AddonManager: Waiting for providers to shut down.&quot;,&quot;state&quot;:[{&quot;name&quot;:&quot;EnvironmentAddonBuilder&quot;,&quot;state&quot;:&quot;(none)&quot;,&quot;filename&quot;:&quot;resource://gre/modules/TelemetryEnvironment.jsm&quot;,&quot;lineNumber&quot;:502,&quot;stack&quot;:[&quot;resource://gre/modules/TelemetryEnvironment.jsm:init:502&quot;,&quot;resource://gre/modules/TelemetryEnvironment.jsm:EnvironmentCache:864&quot;,&quot;resource://gre/modules/TelemetryEnvironment.jsm:getGlobal:63&quot;,&quot;resource://gre/modules/TelemetryEnvironment.jsm:get currentEnvironment:70&quot;,&quot;jar:file:///usr/lib/firefox/omni.ja!/components/TelemetryStartup.js:annotateEnvironment:42&quot;,&quot;jar:file:///usr/lib/firefox/omni.ja!/components/TelemetryStartup.js:TelemetryStartup.prototype.observe:32&quot;]}]},{&quot;name&quot;:&quot;AddonRepository: async shutdown&quot;,&quot;state&quot;:&quot;pending&quot;}],&quot;filename&quot;:&quot;resource://gre/modules/AddonManager.jsm&quot;,&quot;lineNumber&quot;:898,&quot;stack&quot;:[&quot;resource://gre/modules/AddonManager.jsm:startup:898&quot;,&quot;resource://gre/modules/AddonManager.jsm:startup:3090&quot;,&quot;jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:observe:65&quot;]}] Barrier: profile-before-change
+
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;rle0468&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-98-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at example.NewTest.beforeTest(NewTest.java:47)
+<br/>23 lines not shown
+<p>Caused by java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;rle0468&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-98-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:131)
+<br/>at org.openqa.selenium.firefox.FirefoxBinary.waitFor(FirefoxBinary.java:222)
+<br/>at org.openqa.selenium.firefox.FirefoxBinary.clean(FirefoxBinary.java:242)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:91)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at example.NewTest.beforeTest(NewTest.java:47)
+<br/>23 lines not shown
+<p>Caused by Process timed out after waiting for 45000 ms.</p>
+org.openqa.selenium.os.UnixProcess.waitFor(UnixProcess.java:148)
+<br/>at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:129)
+<br/>at org.openqa.selenium.firefox.FirefoxBinary.waitFor(FirefoxBinary.java:222)
+<br/>at org.openqa.selenium.firefox.FirefoxBinary.clean(FirefoxBinary.java:242)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:91)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at example.NewTest.beforeTest(NewTest.java:47)
+<br/>23 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">example.NewTest:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">example.NewTest:f</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
