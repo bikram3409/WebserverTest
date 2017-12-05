@@ -3,6 +3,10 @@ package example;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+
+import java.io.File;
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,8 +45,11 @@ public class NewTest {
 				
   }	
 	@BeforeTest
-	public void beforeTest() {	
-		System.setProperty("webdriver.gecko.driver","/home/bikram/Desktop/geckodriver");
+	public void beforeTest() throws IOException {	
+		
+		String UploadedFilePath = new File(".").getCanonicalPath()
+				 + "/driver/geckodriver";
+		System.setProperty("webdriver.gecko.driver",UploadedFilePath);
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 	}		
