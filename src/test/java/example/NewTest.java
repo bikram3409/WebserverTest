@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class NewTest {
 	WebDriver driver;
@@ -50,7 +51,12 @@ public class NewTest {
 		String UploadedFilePath = new File(".").getCanonicalPath()
 				 + "/driver/geckodriver";
 		System.setProperty("webdriver.gecko.driver",UploadedFilePath);
-		driver = new FirefoxDriver();
+		DesiredCapabilities capabilities=DesiredCapabilities.firefox();
+		System.out.println("Debug 2");
+		capabilities.setCapability("marionette", true);
+		System.out.println("Debug 3");
+  	 driver = new FirefoxDriver(capabilities);
+//	driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 	}		
 	@AfterTest
