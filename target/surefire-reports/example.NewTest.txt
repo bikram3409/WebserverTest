@@ -1,4 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: example.NewTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.837 sec - in example.NewTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.053 sec <<< FAILURE! - in example.NewTest
+f(example.NewTest)  Time elapsed: 6.296 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: TypeError: this.curBrowser.contentBrowser is null
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'rle0468', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-98-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/tmp/rust_mozprofile.ivyNUhipXlTA, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=4.4.0-98-generic, moz:processID=1204.0, browserName=firefox, javascriptEnabled=true, platformName=linux, moz:webdriverClick=false}]
+Session ID: 3b36d79f-0ddc-498c-bee8-564019598292
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:364)
+	at example.NewTest.f(NewTest.java:24)
+
